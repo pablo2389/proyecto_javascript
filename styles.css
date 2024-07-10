@@ -1,0 +1,68 @@
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: rgba(42, 146, 221, 0.475);
+    color:  red;
+    text-align: center;
+    padding: 1rem;
+}
+h1{
+    color: white
+}
+
+#tarjetas-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+}
+
+
+.tarjeta {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+.tarjeta img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.opciones button {
+    background-color: rgba(42, 146, 221, 0.475);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+    #tarjetas-container {
+        grid-template-columns: 1fr; 
+    }
+}
+.redes-sociales a {
+    animation: titilar 1s infinite alternate; 
+    margin-right: 277px;
+}
+
+@keyframes titilar {
+    0% {
+        transform: scale(1); 
+    }
+    100% {
+        transform: scale(1.1); 
+    }
+}
